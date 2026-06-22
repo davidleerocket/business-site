@@ -1,8 +1,10 @@
 // Replace this with the Google Form or checkout URL when it is ready.
-const intakeUrl = "mailto:team@thinkfastsolutions.com?subject=Start%20My%20Job%20Search%20Makeover";
+const intakeUrl = "https://forms.gle/8YMxXpUrsb2k589m9";
 
 document.querySelectorAll("[data-intake-link]").forEach((link) => {
   link.href = intakeUrl;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
 });
 
 const navToggle = document.querySelector(".nav-toggle");
