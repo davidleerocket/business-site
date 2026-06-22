@@ -77,6 +77,12 @@ a {
   background: var(--dark-blue);
 }
 
+.hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
 .site-nav {
   min-height: 112px;
   display: flex;
@@ -134,8 +140,13 @@ a {
 }
 
 .hero-content {
-  padding-top: 88px;
-  padding-bottom: 68px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .hero-content h1,
@@ -158,8 +169,8 @@ a {
 .hero-content > p {
   max-width: 530px;
   margin: 20px 0 42px;
-  font-size: 1.03rem;
-  line-height: 1.42;
+  font-size: 1.1rem;
+  line-height: 1.52;
 }
 
 .button {
@@ -235,9 +246,9 @@ a {
 .story-text {
   max-width: 500px;
   margin-top: 46px;
-  font-size: 0.92rem;
+  font-size: 1.02rem;
   font-style: italic;
-  line-height: 1.53;
+  line-height: 1.62;
 }
 
 .story-text p {
@@ -274,7 +285,7 @@ a {
 
 .section-heading p {
   margin: 8px 0 0;
-  font-size: 0.88rem;
+  font-size: 1rem;
 }
 
 .deliverables-grid {
@@ -305,9 +316,13 @@ a {
 
 .deliverable-card p,
 .process-step p {
-  margin: 12px auto 0;
-  font-size: 0.78rem;
-  line-height: 1.45;
+  margin: 14px auto 0;
+  font-size: 0.98rem;
+  line-height: 1.58;
+}
+
+.deliverable-card p {
+  max-width: 285px;
 }
 
 .process-grid {
@@ -332,8 +347,8 @@ a {
 }
 
 .process-step p {
-  max-width: 270px;
-  font-size: 0.82rem;
+  max-width: 300px;
+  font-size: 0.96rem;
 }
 
 .cta {
@@ -413,6 +428,28 @@ a {
 :focus-visible {
   outline: 3px solid #315ff4;
   outline-offset: 4px;
+}
+
+@media (min-width: 761px) {
+  .hero,
+  .story,
+  .included,
+  .process,
+  .cta,
+  .contact {
+    min-height: 100svh;
+  }
+
+  .included,
+  .process {
+    display: flex;
+    align-items: center;
+  }
+
+  .included > .container,
+  .process > .container {
+    width: min(var(--container), calc(100% - 64px));
+  }
 }
 
 @media (max-width: 980px) {
@@ -562,7 +599,7 @@ a {
 
   .deliverable-card p,
   .process-step p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .cta {
@@ -624,7 +661,8 @@ a {
   .section-heading h2,
   .cta h2,
   .contact h2 {
-    font-size: 2.75rem;
+    font-size: clamp(2.3rem, 12vw, 2.75rem);
+    line-height: 1.08;
   }
 
   .story-text {

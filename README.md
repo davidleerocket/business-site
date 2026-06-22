@@ -1,13 +1,15 @@
-# ThinkFastSolutions Website
+# ThinkFastSolutions website
 
-Static GitHub Pages site for ThinkFastSolutions.
-
-## Update the intake destination
-
-Open `script.js` and replace the `intakeUrl` value with the Google Form or checkout URL. Both "Start My Job Search Makeover" buttons use that one value.
-
-For now, those buttons open a new email addressed to `team@thinkfastsolutions.com`.
+Responsive one-page GitHub Pages site.
 
 ## Publish
+Upload the contents of this folder to the repository root and replace files with matching names. Keep `CNAME` in the root.
 
-Upload all files and the `assets` folder to the root of the GitHub Pages repository. Keep the `CNAME` file so the custom domain remains `thinkfastsolutions.com`.
+## Intake link
+When the Google Form or checkout page is ready, replace the `intakeUrl` value near the top of `script.js`.
+
+## Revision 2
+- Hero fills the browser viewport on desktop and mobile.
+- Deliverable and process text is larger and easier to read.
+- Mobile heading spacing is corrected.
+- Major desktop sections use the full viewport height when their content fits.
