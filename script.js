@@ -1,12 +1,3 @@
-// Replace this with the Google Form or checkout URL when it is ready.
-const intakeUrl = "https://forms.gle/8YMxXpUrsb2k589m9";
-
-document.querySelectorAll("[data-intake-link]").forEach((link) => {
-  link.href = intakeUrl;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-});
-
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector("#nav-links");
 

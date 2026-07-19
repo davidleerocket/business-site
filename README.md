@@ -1,15 +1,12 @@
-# ThinkFastSolutions website
+# ThinkFast Solutions website
 
-Responsive one-page GitHub Pages site.
+Responsive one-page GitHub Pages site designed to resemble a clean professional resume.
 
 ## Publish
 Upload the contents of this folder to the repository root and replace files with matching names. Keep `CNAME` in the root.
 
-## Intake link
-When the Google Form or checkout page is ready, replace the `intakeUrl` value near the top of `script.js`.
+## Contact links
+The main call-to-action and email button open a new email to `team@thinkfastsolutions.com`. The phone button uses `tel:+13125901782`.
 
-## Revision 2
-- Hero fills the browser viewport on desktop and mobile.
-- Deliverable and process text is larger and easier to read.
-- Mobile heading spacing is corrected.
-- Major desktop sections use the full viewport height when their content fits.
+## Privacy policy
+The existing privacy page is preserved but intentionally not linked from the redesigned one-page site. It can be redesigned and relinked in a later revision.
