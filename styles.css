@@ -298,14 +298,14 @@ a {
 
 .contact-row {
   display: grid;
-  grid-template-columns: 180px minmax(430px, 540px);
+  grid-template-columns: 1fr minmax(430px, 540px) 1fr;
   align-items: center;
-  justify-content: center;
   gap: 22px;
   margin: 24px auto;
 }
 
 .contact-label {
+  justify-self: end;
   text-align: right;
 }
 
@@ -381,7 +381,7 @@ a {
   }
 
   .contact-row {
-    grid-template-columns: 150px minmax(390px, 480px);
+    grid-template-columns: 1fr minmax(390px, 480px) 1fr;
   }
 }
 
